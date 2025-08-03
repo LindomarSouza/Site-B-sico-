@@ -1,0 +1,156 @@
+body{
+    background-image: url(../imgs/FundoDaPagina.jpg);
+    margin: 0; 
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+ }
+ body { 
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #c0c0c0;
+    }
+    .marca{
+        position:relative;
+        left: 15px;
+        font-family:'Frohburg';
+        font-size: 50px;
+    }
+
+    header {
+      background-color: #dcdcdc;
+      border-bottom: 2px solid #888;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      background-color: #e0e0e0;
+      padding: 6px 12px;
+      border: 2px outset #fff;
+      box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #999;
+      transition: background-color 0.2s;
+    }
+
+    .menu a:hover {
+      background-color: #c0c0c0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+     main {
+      background: linear-gradient(to bottom right, #e0e0e0, #c0c0c0);
+      border: 3px double #808080;
+      padding: 20px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 4px 4px 0px #999;
+      color: #000080;
+    }
+
+    section {
+      margin-bottom: 30px;
+      background-color: #dcdcdc;
+      padding: 10px;
+      border: 2px inset #fff;
+      box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .img-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .img-row img {
+      width: 100%;
+      max-width: 180px;
+      border: 2px outset #aaa;
+      background-color: white;
+    }
+
+    @media (max-width: 600px) {
+      .img-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /*parte da músicas */
+
+.retro-music {
+  position: fixed;
+  top: 90px; 
+  left: 0;
+  width: 190px;
+  height: 290px;
+  overflow-y: auto;
+  background-color: #dcdcdc;
+  border-right: 2px solid #000;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.retro-music h2 {
+  font-size: 18px;
+  text-align: center;
+  background-color: #a9a9a9;
+  padding: 5px;
+  margin: 0 0 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.retro-music ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.retro-music li {
+  margin-bottom: 20px;
+}
+
+.retro-music audio {
+  width: 100%;
+}
